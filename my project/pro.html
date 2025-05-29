@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Internships & Projects</title>
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(rgba(34, 6, 104, 0.7), rgba(34, 6, 104, 0.7)),
+                  url('WhatsApp Image 2025-05-17 at 15.56.32.jpeg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: #f0f0f0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 80px auto;
+      padding: 40px;
+      background-color: rgba(25, 5, 75, 0.7);
+      border-radius: 15px;
+      box-shadow: 0 0 25px rgba(0, 255, 255, 0.3);
+      position: relative;
+    }
+
+    .home-icon {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-size: 1.8rem;
+      color: dodgerblue;
+      text-decoration: none;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .home-icon:hover {
+      transform: scale(1.2);
+      color: deepskyblue;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      color: white;
+      text-align: center;
+      margin-bottom: 40px;
+      font-weight: 600;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      color: white;
+      margin: 50px 0 20px;
+      font-weight: 500;
+    }
+
+    .box {
+      background-color: rgba(255, 255, 255, 0.05);
+      border: 2px solid cyan;
+      border-radius: 9px;
+      padding: 20px;
+      margin-bottom: 20px;
+      width: 50%;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .box:hover {
+      background-color: rgba(0, 255, 255, 0.1);
+      transform: scale(1.02);
+      box-shadow: 0 0 10px cyan;
+    }
+
+    .box-title {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: whitesmoke;
+    }
+
+    .box-content {
+      max-height: 0;
+      overflow: hidden;
+      padding-top: 0;
+      transition: max-height 0.4s ease, padding-top 0.4s ease;
+      color: #ccc;
+    }
+
+    .box.active .box-content {
+      max-height: 300px;
+      padding-top: 10px;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px;
+      }
+
+      h1, h2 {
+        font-size: 1.5rem;
+      }
+
+      .box-title {
+        font-size: 1rem;
+      }
+
+      .box {
+        width: 100%;
+      }
+
+      .home-icon {
+        top: 15px;
+        right: 20px;
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Technical Home Icon (Font Awesome) -->
+    <a href="index.html" class="home-icon" title="Go to Home">
+      <i class="fas fa-home"></i>
+    </a>
+
+    <h2>Internships</h2>
+
+    <div class="box" onclick="toggleBox(this)">
+      <div class="box-title">Data Analyst Intern – Accenture </div>
+      <div class="box-content">
+        <p>"Acquiring Data" (Level 1 – AI Fundamentals of AI) by Accenture via ASCEND covers the basics of data collection, data types, and ethical handling—essential for understanding how AI systems learn and make decisions.
+Worked on cleaning and visualizing datasets using Python and Tableau.</p>
+        <p><strong>Duration:</strong> April-May 2024</p>
+        <p><strong>Certificate:</strong> <a href="C:\Users\kbhav\OneDrive\Desktop\my project\KanamarlapudiBhavaniVenkataSusmitha-22bq1a5468vvit.net-7032717_compressed (1).pdf" target="_blank">View</a></p>
+      </div>
+    </div>
+
+    <div class="box" onclick="toggleBox(this)">
+      <div class="box-title">Data Science Master Virtual Intern – Altair Tech</div>
+      <div class="box-content">
+        <p> The Data Science Master Virtual Internship offers hands-on experience in data analysis, visualization, and machine learning. It simulates real-world tasks, helping learners build practical skills in Python, statistics, and data-driven decision-making.
+</p>
+        <p><strong>Duration:</strong> October–December 2024</p>
+        <p><strong>Certificate:</strong> <a href="C:\Users\kbhav\OneDrive\Desktop\my project\altair (aicte) (2).pdf" target="_blank">View</a></p>
+      </div>
+    </div>
+
+    <div class="box" onclick="toggleBox(this)">
+      <div class="box-title">AWS Intern – Amazon Web Services</div>
+      <div class="box-content">
+        <p>The AWS Data Engineering Virtual Internship, offered through AWS Academy and EduSkills, provides a comprehensive introduction to cloud-based data engineering. Over a 10-week period, participants engage in hands-on projects involving data ingestion, transformation, storage, and analysis using AWS services such as Amazon S3, AWS Glue, and Amazon Redshift. The program emphasizes building scalable data pipelines, understanding ETL processes, and applying machine learning models, thereby equipping learners with practical skills for real-world data engineering challenges. </p>
+        <p><strong>Duration:</strong> January–March 2024</p>
+        <p><strong>Certificate:</strong> <a href="C:\Users\kbhav\OneDrive\Desktop\my project\AWS (aicte).pdf" target="_blank">View</a></p>
+      </div>
+    </div>
+
+    <h2>Projects</h2>
+
+    <div class="box" onclick="toggleBox(this)">
+      <div class="box-title">Real-Time Multimodal AI</div>
+      <div class="box-content">
+        <p>Developed by Artificial Intelligence platform.Realtime multimodal AI processes and integrates data from multiple sources—like text, audio, images, or video—in real time. It enables systems to understand context more accurately and respond dynamically across various input types.</p>
+        <p><strong>Features:</strong> It integrates multiple data types (text, audio, video, images) simultaneously, offering dynamic, context-aware responses. Features include real-time processing, cross-modal understanding, natural interaction, adaptive learning, and improved decision-making through richer, synchronized inputs.</p>
+        
+      </div>
+    </div>
+
+    <div class="box" onclick="toggleBox(this)">
+      <div class="box-title">Portofile</div>
+      <div class="box-content">
+        <p>A portfolio is a curated collection showcasing an individual’s skills, achievements, and projects. It highlights work in areas like design, development, writing, or data. Portfolios are essential for job applications, internships, or freelancing, offering proof of capabilities and personal growth through real-world examples.
+</p>
+        <p><strong>GitHub:</strong> <a href="@@@">View Code</a></p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleBox(box) {
+      document.querySelectorAll('.box').forEach(el => {
+        if (el !== box) el.classList.remove('active');
+      });
+      box.classList.toggle('active');
+    }
+  </script>
+
+</body>
+</html>

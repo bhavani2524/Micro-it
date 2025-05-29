@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      background-image: url('WhatsApp Image 2025-05-17 at 15.56.32.jpeg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      padding: 20px;
+      /* Optional: add a dark overlay so text is easier to read */
+      position: relative;
+    }
+
+    /* Dark overlay */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(34, 6, 104, 0.7); /* semi-transparent dark purple overlay */
+      z-index: -1;
+    }
+
+    .container {
+      max-width: 1000px;
+      width: 100%;
+      position: relative;
+      z-index: 1; /* keep content above overlay */
+    }
+
+    /* Nav Bar */
+    .nav-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    .logo {
+      font-size: 32px; /* Increased header size */
+      font-weight: bold;
+      color: cyan;
+    }
+
+    .nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      opacity: 0.7;
+      transition: opacity 0.3s, border-bottom 0.3s;
+    }
+
+    .nav a:hover,
+    .nav a.active {
+      opacity: 1;
+      border-bottom: 2px solid #FDF5E6;
+    }
+
+    /* Main Content */
+    .main-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      padding-top: 30px; /* Added space below nav */
+    }
+
+    .intro {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .intro h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .intro h1 span {
+      color: cyan;
+    }
+
+    .intro p {
+      font-size: 18px;
+      opacity: 0.8;
+      line-height: 1.6;
+    }
+
+    /* Buttons */
+    .buttons {
+      margin-top: 20px;
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      border: 2px solid cyan;
+      background-color: transparent;
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: cyan;
+      color: #220668;
+    }
+
+    /* Profile Image */
+    .profile-img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background-image: url('WhatsApp Image 2025-05-16 at 23.03.57.jpeg');
+      background-size: cover;
+      background-position: center;
+      border: 3px solid cyan;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .profile-img:hover {
+      transform: scale(1.05) rotate(2deg);
+      box-shadow: 0 0 15px cyan;
+      cursor: pointer;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .main-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .intro {
+        order: 2;
+      }
+
+      .profile-img {
+        order: 1;
+        margin-bottom: 20px;
+      }
+
+      .nav-bar {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Navigation -->
+    <nav class="nav-bar">
+      <div class="logo">Portfolio</div>
+      <div class="nav">
+        <a href="#" class="active">Home</a>
+        <a href="About Me.html">About</a>
+        <a href="pro.html">Projects</a>
+        <a href="con.html">Contact</a>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <div class="intro">
+        <h1>Hello, It's Me <br> <span>K BHAVANI VENKATA SUSMITHA</span></h1>
+        <p>
+          And I'm a Frontend Web Developer<br>
+          As an aspiring data analyst and front-end developer, I’ve completed my projects showcasing my skills in data visualization and responsive web design. My passion for uncovering insights from data and crafting user-friendly interfaces drives my work. I’m eager to combine analytical expertise with creative front-end solutions to build impactful applications.
+        </p>
+        <div class="buttons">
+          <a href="c:\Users\kbhav\OneDrive\Desktop\my project\CV_2024080820492689 (1).pdf" class="btn">Download Resume</a>
+          <a href="#" class="btn">Hire Me </a>
+        </div>
+      </div>
+      <div class="profile-img"></div>
+    </div>
+  </div>
+</body>
+</html>
